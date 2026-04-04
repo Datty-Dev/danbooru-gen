@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Chunk WDv3-validated general tags, embed, store in Chroma.
 
-Only embeds tags that are WDv3-validated AND general category.
+All general tags are embedded — WDv3 list used for validation separately.
 This is the set we'll actually retrieve and output.
 Artist/character/copyright are skipped — not needed for prompt generation.
 """
@@ -54,9 +54,9 @@ def main():
     # Only WDv3-validated general tags
     tags = {
         k: v for k, v in data["tags"].items()
-        if v.get("wdv3_validated") and v.get("category") == "general"
+        if v.get("category") in ("general", "unknown")
     }
-    print(f"WDv3-validated general tags: {len(tags)}")
+    print(f"All general tags: {len(tags)}")
     
     # Assign subcategories
     subcategorized = {}
