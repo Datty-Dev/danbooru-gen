@@ -1,0 +1,29 @@
+{
+  "orientation": "vertical",
+  "fps": 30,
+  "scenes": [
+    {
+      "description": "Tzubaki standing in a bamboo forest at sunset, Chinese martial arts outfit, serious expression",
+      "trigger": "Tzubaki",
+      "model": "wai",
+      "duration": 2.0,
+      "transition_in": "hard_cut"
+    },
+    {
+      "description": "Tzubaki jumping with sword raised overhead, dynamic action pose, motion lines",
+      "trigger": "Tzubaki",
+      "model": "wai",
+      "duration": 1.5,
+      "transition_in": "whip_pan",
+      "transition_duration": 0.27
+    },
+    {
+      "description": "Tzubaki meditating in a zen garden, peaceful, cherry blossoms falling",
+      "trigger": "Tzubaki",
+      "model": "wai",
+      "duration": 2.5,
+      "transition_in": "fade_black",
+      "transition_duration": 0.5
+    }
+  ]
+}
