@@ -7,3 +7,4 @@ __pycache__/
 video/node_modules/
 video/output/
 video/public/
+video/.cache/
