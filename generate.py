@@ -136,7 +136,8 @@ def validate_tags(output_tags: list[str], wdv3_tags: set) -> dict:
             or tag_clean.replace(" ", "_") in wdv3_tags 
             or tag_clean.replace("_", " ") in wdv3_tags
             or tag_clean in ALLOWED_PROMPT_TAGS
-            or tag_clean.lower() in ALLOWED_PROMPT_TAGS):
+            or tag_clean.lower() in ALLOWED_PROMPT_TAGS
+            or tag_clean.replace("_", " ") in ALLOWED_PROMPT_TAGS):
             valid.append(tag_clean)
         else:
             invalid.append(tag_clean)

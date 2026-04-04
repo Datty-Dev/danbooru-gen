@@ -3,3 +3,4 @@ data/raw/
 *.csv
 data/danbooru.json
 data/chroma_db/
+__pycache__/
