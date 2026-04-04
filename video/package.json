@@ -1,0 +1,19 @@
+{
+  "name": "danbooru-manga-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render": "npx remotion render manga-cut --frames=0-134 out/manga.mp4",
+    "studio": "npx remotion studio"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
+  }
+}

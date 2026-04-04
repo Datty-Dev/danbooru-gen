@@ -109,6 +109,7 @@ ALLOWED_PROMPT_TAGS = {
     "lowres", "normal quality", "worst quality", "low quality",
     "score_9", "score_8_up", "score_7_up", "score_6_up", "source_anime",
     "cinematic lighting", "dramatic lighting", "volumetric lighting",
+    "neon", "neon lights", "neon glow",
     "high quality", "detailed", "detailed face", "detailed eyes",
     "nsfw", "sfw",
 }
