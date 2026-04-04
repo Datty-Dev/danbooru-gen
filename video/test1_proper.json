@@ -1,0 +1,23 @@
+{
+  "orientation": "vertical",
+  "fps": 30,
+  "scenes": [
+    {
+      "prompt": "1boy, solo, black hair, messy hair, red eyes, serious, chinese clothes, black robe, standing, full body, looking at viewer, bamboo forest, outdoors, sunset, masterpiece, best quality, absurdres",
+      "duration": 2.0,
+      "transition_in": "hard_cut"
+    },
+    {
+      "prompt": "1boy, solo, black hair, messy hair, red eyes, determined, chinese clothes, black robe, sword, holding weapon, katana, jumping, full body, bamboo forest, outdoors, motion lines, masterpiece, best quality, absurdres",
+      "duration": 1.5,
+      "transition_in": "whip_pan",
+      "transition_duration": 0.27
+    },
+    {
+      "prompt": "1boy, solo, black hair, messy hair, red eyes, closed eyes, chinese clothes, black robe, sitting, seiza, full body, cherry blossoms, petals, outdoors, masterpiece, best quality, absurdres",
+      "duration": 2.5,
+      "transition_in": "fade_black",
+      "transition_duration": 0.5
+    }
+  ]
+}

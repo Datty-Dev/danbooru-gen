@@ -127,7 +127,7 @@ def generate_image(positive_prompt, negative_prompt=None, seed=None, workflow_pa
     result = wait_for_completion(prompt_id)
     
     # Get base image (node 7)
-    for nid, nout in result.get("outputs", {}).items():
+    for nid, nout in sorted(result.get("outputs", {}).items(), key=lambda x: x[0] == "20:18", reverse=True):
         if nid == "7":
             for img in nout.get("images", []):
                 path = download_image(img["filename"], img.get("subfolder", ""))
@@ -137,7 +137,7 @@ def generate_image(positive_prompt, negative_prompt=None, seed=None, workflow_pa
                 return cached_path
     
     # Fallback: any image
-    for nid, nout in result.get("outputs", {}).items():
+    for nid, nout in sorted(result.get("outputs", {}).items(), key=lambda x: x[0] == "20:18", reverse=True):
         for img in nout.get("images", []):
             path = download_image(img["filename"], img.get("subfolder", ""))
             cached_path = os.path.join(CACHE_DIR, f"{key}.png")

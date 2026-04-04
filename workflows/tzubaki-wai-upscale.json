@@ -91,19 +91,6 @@
       "title": "VAE Decode"
     }
   },
-  "7": {
-    "inputs": {
-      "filename_prefix": "ComfyUI",
-      "images": [
-        "6",
-        0
-      ]
-    },
-    "class_type": "SaveImage",
-    "_meta": {
-      "title": "Save Image"
-    }
-  },
   "12": {
     "inputs": {
       "PowerLoraLoaderHeaderWidget": {
@@ -119,7 +106,7 @@
         "lora": "Illustrious XL_Style Anime_By KinTG_v1.0.safetensors",
         "strength": 0.7
       },
-      "➕ Add Lora": "",
+      "\u2795 Add Lora": "",
       "model": [
         "1",
         0

@@ -35,8 +35,8 @@ def load_config(config_path):
         raise ValueError("Config must have at least one scene")
     
     for i, scene in enumerate(config["scenes"]):
-        if "image" not in scene and "description" not in scene:
-            raise ValueError(f"Scene {i+1} needs 'image' or 'description'")
+        if "image" not in scene and "description" not in scene and "prompt" not in scene:
+            raise ValueError(f"Scene {i+1} needs 'image', 'description', or 'prompt'")
         if "duration" not in scene:
             scene["duration"] = 1.5  # default
     
