@@ -3,7 +3,7 @@
     "full_name": "Tzubaki",
     "role": "protagonist",
     "tags": "1boy, solo, tzubaki \\(character\\), black hair, messy hair, red eyes",
-    "personality": "Minimalist, analytical, debt-obsessed. Never uses more energy than needed.",
+    "personality": "Carefree, quirky, high energy \u2014 but sharply analytical when it counts. The Minimalist in combat: never uses more energy than needed. Reads Golden Scripts like code, finds structural weaknesses instantly. Debt-obsessed: will stop mid-fight to calculate if breaking a wall costs more than the bounty. Chaotic energy masked by strategic thinking. Treats everything like a game until it isn't.",
     "clothing": {
       "default": "chinese clothes, black robe, 5 buttons",
       "combat": "black robe, sleeves rolled, bandaged arms",
@@ -12,7 +12,31 @@
     "magic": "Living Ink \u2014 Three Hearts (Iron/Flowing/Ghost)",
     "lora": "Tzubaki_WAI_Illustrious_3090_V1_000001750.safetensors",
     "lora_strength": 0.9,
-    "visual_marks": "Black ink-blot birthmark that moves across skin"
+    "visual_marks": "Black ink-blot birthmark that moves across skin",
+    "speech": {
+      "tone": "casual, energetic, slightly teasing. Talks fast when excited, drops to quiet and precise when analyzing.",
+      "quirks": [
+        "Mixes mundane complaints into serious moments ('This gravity field is ruining my hair, by the way.')",
+        "Assigns price tags to everything ('Nice shield. Worth about 300 gold. Your left side? Zero.')",
+        "Uses food metaphors constantly ('Your technique is overcooked. Too much heat, no finesse.')",
+        "Trails off mid-sentence when he notices something interesting ('...wait, hold that thought \u2014 yeah, your script has a crack right there.')",
+        "Addresses enemies casually, like they're shopkeepers ('Hey, big guy. The four-arm thing is cool. Gonna cost you though.')"
+      ],
+      "energy_pattern": "HIGH most of the time \u2014 bouncing, gesturing, grinning. Drops to LOW and still only when he's reading a script or calculating. Then snaps right back to HIGH.",
+      "voice_profile": {
+        "pitch": "medium-high, youthful",
+        "pace": "fast, occasionally rapid-fire",
+        "accent": "neutral with occasional slang",
+        "laugh": "sharp, sudden \u2014 more of a 'ha!' than extended",
+        "sample_lines": [
+          "Ohhh, THAT'S what your script does? That's actually kinda cool. Shame it's on the wrong side of your body.",
+          "Ren. Thread. Now. No, the other kind of now. The fast kind.",
+          "I'm not saying I planned this. I'm saying it worked out exactly how I didn't plan it.",
+          "Debt's at 47,000. This guy's bounty is 3,000. I can break exactly ONE wall. Choose wisely.",
+          "You know what your problem is? You guys memorize your scripts. I read them."
+        ]
+      }
+    }
   },
   "the_hermit": {
     "full_name": "The Hermit",
