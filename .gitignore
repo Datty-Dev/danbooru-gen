@@ -13,3 +13,4 @@ video/.cache/
 video/output/
 scenes/*/images/
 scenes/*/video/
+secrets/

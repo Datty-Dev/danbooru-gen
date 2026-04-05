@@ -58,7 +58,7 @@ A lightweight JSON manifest (`scenes/scenes_index.json`) tracks all scenes — k
   "characters": ["Tzubaki"],
   "panels": 3,
   "mood": "action",
-  "cloud_path": "gdrive:danbooru-scenes/tzubaki-bamboo-training",
+  "cloud_path": "dropbox:Danbooru-Scenes/tzubaki-bamboo-training",
   "cloud_uploaded": "2026-04-05",
   "local_exists": false,
   "tags_used": { ... }
@@ -68,13 +68,13 @@ A lightweight JSON manifest (`scenes/scenes_index.json`) tracks all scenes — k
 This lets us:
 - Delete local files to save space
 - Still know what scenes exist and where to find them
-- Re-download from cloud if needed (`rclone copy gdrive:danbooru-scenes/<name> scenes/<name>`)
+- Re-download from cloud if needed (`rclone copy dropbox:Danbooru-Scenes/<name> scenes/<name>`)
 - Browse/search scenes without cloud access
 
 ## Cloud Storage
-- After rendering, upload scene folder to Google Drive via `rclone`
+- After rendering, upload scene folder to Dropbox via `rclone`
 - Update `scenes_index.json`: set `cloud_uploaded` date, `local_exists` to false after cleanup
-- Config: set Google Drive remote name in TOOLS.md
+- Config: set Dropbox remote name in TOOLS.md
 - Local cache in `danbooru/video/.cache/generated/` for re-use across scenes
 
 ## The Flow
@@ -208,10 +208,10 @@ Steps:
 
 ### Phase 7: Cloud Upload
 **Input:** Completed scene folder
-**Output:** Uploaded to Google Drive
+**Output:** Uploaded to Dropbox
 
 Steps:
-1. Run `rclone copy scenes/<name> gdrive:danbooru-scenes/<name>`
+1. Run `rclone copy scenes/<name> dropbox:Danbooru-Scenes/<name>`
 2. Confirm upload
 3. Optionally clean local copy (keep cached images only)
 
