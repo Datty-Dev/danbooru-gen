@@ -1,0 +1,32 @@
+{
+  "orientation": "vertical",
+  "fps": 30,
+  "scenes": [
+    {
+      "image": "../tzubaki-closeup-crying.png",
+      "duration": 2.0,
+      "transition_in": "hard_cut",
+      "text_overlays": [
+        {"type": "speech_bubble", "text": "Why did you leave me...", "font_size": 32, "x": 500, "y": 350}
+      ]
+    },
+    {
+      "image": "../tzubaki-crying-cliff.png",
+      "duration": 2.0,
+      "transition_in": "whip_pan",
+      "transition_duration": 0.27,
+      "text_overlays": [
+        {"type": "speech_bubble", "text": "CHURROOOO!!!", "font_size": 36, "x": 780, "y": 580}
+      ]
+    },
+    {
+      "image": "../tzubaki-cliff-river.png",
+      "duration": 3.0,
+      "transition_in": "fade_black",
+      "transition_duration": 0.5,
+      "text_overlays": [
+        {"type": "subtitle", "text": "And so he disappeared into the night."}
+      ]
+    }
+  ]
+}

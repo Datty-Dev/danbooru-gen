@@ -100,14 +100,16 @@ def generate_frames(config, output_dir):
     title_card = config.get("title_card")
     
     frames_dir = os.path.join(output_dir, "frames")
-    os.makedirs(frames_dir, exist_ok=True)
+    os.makedirs(frames_dir, exist_ok=True)  # ensure parent exists too
+    os.makedirs(output_dir, exist_ok=True)
     
     # Load and resize all scene images
     images = []
     for scene in scenes:
         img = Image.open(scene["image"])
         img = resize_image(img, width, height)
-        img = add_letterbox(img)
+        if config.get('letterbox', False):
+            img = add_letterbox(img)
         images.append(img)
     
     frame_num = 0

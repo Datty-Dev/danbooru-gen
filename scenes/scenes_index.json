@@ -1,0 +1,28 @@
+{
+  "scenes": [
+    {
+      "name": "tzubaki-bamboo-training",
+      "created": "2026-04-05",
+      "description": "Tzubaki training in bamboo forest, fighting with sword, meditating",
+      "characters": ["Tzubaki"],
+      "panels": 3,
+      "orientation": "vertical",
+      "mood": "action",
+      "cloud_path": "gdrive:danbooru-scenes/tzubaki-bamboo-training",
+      "cloud_uploaded": "2026-04-05",
+      "local_path": "scenes/tzubaki-bamboo-training",
+      "local_exists": true,
+      "files": {
+        "images": ["panel_01.png", "panel_02.png", "panel_03.png"],
+        "video": ["raw.mp4"],
+        "audio": []
+      },
+      "tags_used": {
+        "continuity": "1boy, solo, Tzubaki, black hair, messy hair, red eyes, sharp eyes, chinese clothes, black robe, 5 buttons",
+        "panel_01": "standing, full body, bamboo forest, outdoors, sunset, golden hour",
+        "panel_02": "sword, katana, jumping, motion lines",
+        "panel_03": "sitting, seiza, cherry blossoms"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "orientation": "vertical",
+  "fps": 30,
+  "scenes": [
+    {
+      "image": "../tzubaki-closeup-crying.png",
+      "duration": 2.0,
+      "transition_in": "hard_cut"
+    },
+    {
+      "image": "../tzubaki-crying-cliff.png",
+      "duration": 2.0,
+      "transition_in": "screen_shake",
+      "transition_duration": 0.27
+    },
+    {
+      "image": "../tzubaki-cliff-river.png",
+      "duration": 3.0,
+      "transition_in": "cross_dissolve",
+      "transition_duration": 0.5
+    }
+  ]
+}

@@ -3,9 +3,37 @@
 import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
+import cv2
+import numpy as np
+
+
 FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 FONT_BOLD = os.path.join(FONT_DIR, "DejaVuSans-Bold.ttf")
 FONT_REGULAR = os.path.join(FONT_DIR, "DejaVuSans.ttf")
+
+
+
+_cascade = None
+
+def detect_face(img):
+    """Detect face position in image. Returns (x, y, w, h) of face bounding box or None."""
+    global _cascade
+    if _cascade is None:
+        _cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+
+    img_array = np.array(img)
+    gray = cv2.cvtColor(img_array, cv2.COLOR_RGB2GRAY)
+    faces = _cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4, minSize=(60, 60))
+
+    if len(faces) > 0:
+        areas = [w*h for (x,y,w,h) in faces]
+        best = faces[areas.index(max(areas))]
+        result = tuple(int(v) for v in best)
+        print(f"    [face] detected at {result}")
+        return result
+    else:
+        print("    [face] no face detected, using fallback position")
+        return None
 
 
 def load_font(size, bold=True):
@@ -17,7 +45,7 @@ def load_font(size, bold=True):
         return ImageFont.load_default()
 
 
-def render_speech_bubble(img, text, position="top-right", font_size=28, padding=12):
+def render_speech_bubble(img, text, position="top-right", font_size=28, padding=12, bx=None, by=None):
     """Add a speech bubble to an image.
 
     Args:
@@ -26,6 +54,7 @@ def render_speech_bubble(img, text, position="top-right", font_size=28, padding=
         position: top-left, top-right, top-center, bottom-left, bottom-right, bottom-center
         font_size: text font size
         padding: bubble padding
+        bx, by: manual bubble position (top-left corner). Overrides position. Auto-detected if not set.
 
     Returns:
         Modified PIL Image
@@ -45,16 +74,45 @@ def render_speech_bubble(img, text, position="top-right", font_size=28, padding=
 
     w, h = frame.size
 
-    # Position mapping
-    positions = {
-        "top-left": (margin, margin),
-        "top-right": (w - bubble_w - margin, margin),
-        "top-center": ((w - bubble_w) // 2, margin),
-        "bottom-left": (margin, h - bubble_h - margin - 20),
-        "bottom-right": (w - bubble_w - margin, h - bubble_h - margin - 20),
-        "bottom-center": ((w - bubble_w) // 2, h - bubble_h - margin - 20),
-    }
-    x, y = positions.get(position, positions["top-right"])
+    # Determine bubble position
+    if bx is not None and by is not None:
+        # Manual coordinates
+        x, y = bx, by
+        # Tail points down-center by default for manual placement
+        tail_dir = "down"
+        # Clamp to image bounds
+        x = max(margin, min(x, w - bubble_w - margin))
+        y = max(margin, min(y, h - bubble_h - margin - 20))
+    else:
+        # Try face detection for smart placement
+        face = detect_face(img)
+        if face:
+            fx, fy, fw, fh = face
+            # Place bubble to the right of face, mouth-level (80% down the face box)
+            mouth_y = fy + int(fh * 0.8)
+            x = fx + fw + 20
+            y = mouth_y - bubble_h // 2  # center bubble on mouth
+            tail_dir = "left"
+            # If bubble would go off right edge, place to left instead
+            if x + bubble_w + margin > w:
+                x = fx - bubble_w - 20
+                tail_dir = "right"
+            # If bubble would go off bottom, shift up
+            if y + bubble_h + margin > h:
+                y = h - bubble_h - margin - 20
+        else:
+            # Fallback to named position
+            positions = {
+                "top-left":      {"pos": (margin, margin), "tail_dir": "down-right"},
+                "top-right":     {"pos": (w - bubble_w - margin, margin), "tail_dir": "down-left"},
+                "top-center":    {"pos": ((w - bubble_w) // 2, margin), "tail_dir": "down"},
+                "bottom-left":   {"pos": (margin, h - bubble_h - margin - 20), "tail_dir": "up-right"},
+                "bottom-right":  {"pos": (w - bubble_w - margin, h - bubble_h - margin - 20), "tail_dir": "up-left"},
+                "bottom-center": {"pos": ((w - bubble_w) // 2, h - bubble_h - margin - 20), "tail_dir": "up"},
+            }
+            pos_config = positions.get(position, positions["top-right"])
+            x, y = pos_config["pos"]
+            tail_dir = pos_config["tail_dir"]
 
     # Draw bubble (rounded rectangle)
     draw.rounded_rectangle(
@@ -65,16 +123,44 @@ def render_speech_bubble(img, text, position="top-right", font_size=28, padding=
         width=2,
     )
 
-    # Draw tail pointing down toward character
-    tail_x = x + bubble_w // 2
-    tail_y = y + bubble_h
-    draw.polygon(
-        [(tail_x - 8, tail_y), (tail_x + 8, tail_y), (tail_x, tail_y + 14)],
-        fill="white",
-        outline="black",
-    )
-    # Fix the top edge of the tail (cover the outline)
-    draw.line([(tail_x - 8, tail_y), (tail_x + 8, tail_y)], fill="white", width=3)
+    # Draw tail — direction based on position so it points toward character
+    tail_size = 14
+    tail_offset_x = bubble_w // 4
+
+    if tail_dir == "down-right":
+        tx, ty = x + bubble_w - tail_offset_x, y + bubble_h
+        draw.polygon([(tx-8, ty), (tx+8, ty), (tx+10, ty+tail_size)], fill="white", outline="black")
+        draw.line([(tx-8, ty), (tx+8, ty)], fill="white", width=3)
+    elif tail_dir == "down-left":
+        tx, ty = x + tail_offset_x, y + bubble_h
+        draw.polygon([(tx-8, ty), (tx+8, ty), (tx-10, ty+tail_size)], fill="white", outline="black")
+        draw.line([(tx-8, ty), (tx+8, ty)], fill="white", width=3)
+    elif tail_dir == "down":
+        tx, ty = x + bubble_w // 2, y + bubble_h
+        draw.polygon([(tx-8, ty), (tx+8, ty), (tx, ty+tail_size)], fill="white", outline="black")
+        draw.line([(tx-8, ty), (tx+8, ty)], fill="white", width=3)
+    elif tail_dir == "up-right":
+        tx, ty = x + bubble_w - tail_offset_x, y
+        draw.polygon([(tx-8, ty), (tx+8, ty), (tx+10, ty-tail_size)], fill="white", outline="black")
+        draw.line([(tx-8, ty), (tx+8, ty)], fill="white", width=3)
+    elif tail_dir == "up-left":
+        tx, ty = x + tail_offset_x, y
+        draw.polygon([(tx-8, ty), (tx+8, ty), (tx-10, ty-tail_size)], fill="white", outline="black")
+        draw.line([(tx-8, ty), (tx+8, ty)], fill="white", width=3)
+    elif tail_dir == "up":
+        tx, ty = x + bubble_w // 2, y
+        draw.polygon([(tx-8, ty), (tx+8, ty), (tx, ty-tail_size)], fill="white", outline="black")
+        draw.line([(tx-8, ty), (tx+8, ty)], fill="white", width=3)
+    elif tail_dir == "left":
+        # Tail points left (for bubbles to the right of a face)
+        tx, ty = x, y + bubble_h // 2
+        draw.polygon([(tx, ty-8), (tx, ty+8), (tx-tail_size, ty)], fill="white", outline="black")
+        draw.line([(tx, ty-8), (tx, ty+8)], fill="white", width=3)
+    elif tail_dir == "right":
+        # Tail points right (for bubbles to the left of a face)
+        tx, ty = x + bubble_w, y + bubble_h // 2
+        draw.polygon([(tx, ty-8), (tx, ty+8), (tx+tail_size, ty)], fill="white", outline="black")
+        draw.line([(tx, ty-8), (tx, ty+8)], fill="white", width=3)
 
     # Draw text
     draw.text((x + padding, y + padding - bbox[1]), text, fill="black", font=font)
@@ -206,6 +292,8 @@ def render_text_overlay(img, overlay_config, progress=None):
             text=overlay_config["text"],
             position=overlay_config.get("position", "top-right"),
             font_size=overlay_config.get("font_size", 28),
+            bx=overlay_config.get("x"),
+            by=overlay_config.get("y"),
         )
     elif overlay_type == "subtitle":
         return render_subtitle(

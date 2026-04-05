@@ -8,3 +8,8 @@ video/node_modules/
 video/output/
 video/public/
 video/.cache/
+*.mp4
+video/.cache/
+video/output/
+scenes/*/images/
+scenes/*/video/
