@@ -1,0 +1,142 @@
+{
+  "title": "Forest Scene — The Capture",
+  "episode": 1,
+  "act": 1,
+  "location": "deep-forest",
+  "orientation": "vertical",
+  "mood": "calm → playful → action",
+  "scenes": [
+    {
+      "id": 0,
+      "shot": "Establishing",
+      "shot_tags": "scenery, wide_shot, no_humans",
+      "description": "Wide shot of ancient forest canopy. Massive trees, dappled sunlight, moss, mystical atmosphere.",
+      "prompt": "masterpiece, best quality, scenery, wide_shot, no_humans, forest, deep woods, ancient trees, dappled sunlight, moss, roots, overgrown, mystical, glowing mushrooms, purple light, canopy, vines, lush, fantasy landscape",
+      "negative_prompt": "worst quality, low quality, blurry, watermark, signature, text, humans, characters, nsfw",
+      "transition": "fade_in",
+      "duration": 3.0,
+      "reference_panel": null,
+      "denoise": 1.0
+    },
+    {
+      "id": 1,
+      "shot": "Full",
+      "shot_tags": "full_body",
+      "description": "Tzubaki sitting cross-legged in a sunlit clearing, surrounded by glowing purple berry bushes. At peace. A small silver fox sitting next to him.",
+      "prompt": "masterpiece, best quality, 1boy, solo, tzubaki \\(character\\), full_body, sitting, cross-legged, forest clearing, sunlit, glowing purple berries, berry bushes, black hair, messy hair, red eyes, chinese clothes, black robe, 5 buttons, relaxed, peaceful, moss, dappled sunlight, small silver fox sitting beside, animal companion, lush, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
+      "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, nsfw",
+      "transition": "cross_dissolve",
+      "duration": 2.5,
+      "reference_panel": null,
+      "denoise": 1.0
+    },
+    {
+      "id": 2,
+      "shot": "Close-up",
+      "shot_tags": "close-up, portrait",
+      "description": "Tzubaki's face, eyes half-closed, savoring a berry. Content smile. Calm beat.",
+      "prompt": "masterpiece, best quality, 1boy, solo, tzubaki \\(character\\), close-up, portrait, face, eyes closed, chewing, content smile, serene, peaceful, red eyes, black hair, messy hair, dappled sunlight, soft lighting, forest background, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
+      "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, nsfw",
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 1,
+      "denoise": 0.70
+    },
+    {
+      "id": 3,
+      "shot": "Insert",
+      "shot_tags": "still_life",
+      "description": "The small silver fox eating a glowing purple berry. Cute, close-up. Shows Tzubaki shares this place with the forest creatures.",
+      "prompt": "masterpiece, best quality, still_life, close-up, small silver fox, eating, glowing purple berry, cute, fluffy, forest floor, moss, dappled sunlight, soft focus, bokeh, woodland creature",
+      "negative_prompt": "worst quality, low quality, blurry, watermark, signature, text, humans, nsfw",
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": null,
+      "denoise": 1.0
+    },
+    {
+      "id": 4,
+      "shot": "Close-up",
+      "shot_tags": "close-up, portrait",
+      "description": "Tzubaki pops berry in mouth, opens one eye mischievously, glancing at the fox. 'Worth it.' Playful beat.",
+      "prompt": "masterpiece, best quality, 1boy, solo, tzubaki \\(character\\), close-up, portrait, face, one eye open, mischievous, playful expression, smirk, chewing, red eyes, black hair, messy hair, forest background, dappled light, silver fox nearby, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
+      "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, nsfw",
+      "transition": "hard_cut",
+      "duration": 2.5,
+      "reference_panel": 2,
+      "denoise": 0.70,
+      "overlays": [
+        {
+          "type": "speech_bubble",
+          "text": "Illegal in seven provinces. ...Honestly? Worth it.",
+          "position": [0.7, 0.15],
+          "tail_direction": "bottom-left"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "shot": "Close-up",
+      "shot_tags": "close-up, portrait",
+      "description": "Tzubaki freezes mid-chew. Eyes snap wide. Alert. The silver fox's ears perk up too — both heard something. Mood shifts to action.",
+      "prompt": "masterpiece, best quality, 1boy, solo, tzubaki \\(character\\), close-up, portrait, face, eyes wide, alert, surprised, tense, frozen, stopped mid-motion, red eyes, black hair, messy hair, forest background, dramatic lighting, silver fox ears perked up beside, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
+      "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, nsfw",
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 4,
+      "denoise": 0.70,
+      "overlays": [
+        {
+          "type": "speech_bubble",
+          "text": "...That's a lot of footsteps.",
+          "position": [0.3, 0.12],
+          "tail_direction": "bottom-right"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "shot": "Low angle",
+      "shot_tags": "from_below, full_body",
+      "description": "Low angle — Tzubaki still sitting, looking up. Armored guards emerge from the treeline surrounding him. He's still holding a berry.",
+      "prompt": "masterpiece, best quality, 1boy, tzubaki \\(character\\), from_below, full_body, sitting on ground, looking up, surrounded, armored guards in background, forest edge, swords drawn, golden script glow, holding berry, unbothered, black hair, red eyes, chinese clothes, black robe, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
+      "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, nsfw",
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 1,
+      "denoise": 0.70
+    },
+    {
+      "id": 7,
+      "shot": "Close-up",
+      "shot_tags": "close-up, portrait",
+      "description": "Tzubaki looking up at guards. Annoyed. Weighing whether to finish the berry.",
+      "prompt": "masterpiece, best quality, 1boy, solo, tzubaki \\(character\\), close-up, portrait, face, annoyed expression, looking up, unimpressed, holding berry in hand, red eyes, black hair, messy hair, slight frown, forest background, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
+      "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, nsfw",
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 5,
+      "denoise": 0.70,
+      "overlays": [
+        {
+          "type": "speech_bubble",
+          "text": "Can I at least finish this one? It's a really good batch.",
+          "position": [0.7, 0.12],
+          "tail_direction": "bottom-left"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "shot": "Full",
+      "shot_tags": "full_body",
+      "description": "Guard grabs Tzubaki by collar, hauls him up. Shackles on wrists. He doesn't resist — looking at shackles with mild interest. Silver fox watching from the bushes.",
+      "prompt": "masterpiece, best quality, 1boy, tzubaki \\(character\\), full_body, being grabbed, guard hands on collar, shackles on wrists, standing, not resisting, looking at shackles, curious, unbothered, black hair, red eyes, chinese clothes, black robe, forest clearing, armored guards, silver fox watching from bushes, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
+      "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, nsfw",
+      "transition": "whip_pan_right",
+      "duration": 2.0,
+      "reference_panel": 1,
+      "denoise": 0.70
+    }
+  ]
+}
