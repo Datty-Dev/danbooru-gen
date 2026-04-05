@@ -1,0 +1,37 @@
+{
+  "title": "THE INK-SHIFT DEBT",
+  "slug": "the-ink-shift-debt",
+  "logline": "In a world where your birthmark is your destiny, a carefree forest-dweller with a 'living' ink stain must hunt down a syndicate of tattoo-thieves to pay off his master's impossible debts.",
+  "default_orientation": "vertical",
+  "default_mood": "dramatic",
+  "default_model": "wai-illustrious",
+  "magic_system": {
+    "golden_scripts": "Permanent geometric birthmarks that glow gold. Represent 'Finished Magic'. Predictable but powerful.",
+    "living_ink": "Tzubaki's messy black Ink-Blot that moves across his skin. Uses Three Hearts to change reality.",
+    "three_hearts": {
+      "iron_heart": {
+        "state": "Solid",
+        "effect": "Turns ink/objects into something unbreakable",
+        "visual": "Black metallic sheen"
+      },
+      "flowing_heart": {
+        "state": "Liquid",
+        "effect": "Objects ignore impact, flow around obstacles",
+        "visual": "Rippling water-like ink"
+      },
+      "ghost_heart": {
+        "state": "Ethereal",
+        "effect": "Limbs/objects become weightless shadow, pass through Fixed magic",
+        "visual": "Fading grey smoke"
+      }
+    }
+  },
+  "factions": {
+    "the_academy": "Teaches Golden Script mages. Secretly buying stolen marks from Harvesters for noble children.",
+    "the_harvesters": "Rogue 'Unmarked' organization. Peel Golden Scripts off living mages. Build Chimera soldiers with grafted marks.",
+    "the_hermit": "Tzubaki's master. Former Grand Archivist. Stole Source Ink (Tzubaki) to stop Academy experiments."
+  },
+  "created": "2026-04-05",
+  "total_episodes": 3,
+  "status": "active"
+}

@@ -1,0 +1,53 @@
+{
+  "tzubaki": {
+    "full_name": "Tzubaki",
+    "role": "protagonist",
+    "tags": "1boy, solo, tzubaki \\(character\\), black hair, messy hair, red eyes",
+    "personality": "Minimalist, analytical, debt-obsessed. Never uses more energy than needed.",
+    "clothing": {
+      "default": "chinese clothes, black robe, 5 buttons",
+      "combat": "black robe, sleeves rolled, bandaged arms",
+      "casual": "simple tunic, loose pants"
+    },
+    "magic": "Living Ink — Three Hearts (Iron/Flowing/Ghost)",
+    "lora": "Tzubaki_WAI_Illustrious_3090_V1_000001750.safetensors",
+    "lora_strength": 0.9,
+    "visual_marks": "Black ink-blot birthmark that moves across skin"
+  },
+  "the_hermit": {
+    "full_name": "The Hermit",
+    "role": "mentor",
+    "tags": "1boy, old man, long white beard, bald, golden eyes, wise",
+    "personality": "Secretive, caring, former Grand Archivist",
+    "clothing": {
+      "default": "tattered robes, wooden sandals, straw hat"
+    },
+    "magic": "Unknown (former Archivist knowledge)",
+    "lora": null,
+    "lora_strength": 0
+  },
+  "headmistress": {
+    "full_name": "Headmistress",
+    "role": "antagonist/authority",
+    "tags": "1girl, mature female, tall, sharp eyes, silver hair, bun hair, glasses",
+    "personality": "Calculating, sees Tzubaki as a tool",
+    "clothing": {
+      "default": "formal academy robes, gold trim, high collar"
+    },
+    "magic": "Golden Script — unknown type",
+    "lora": null,
+    "lora_strength": 0
+  },
+  "roommate": {
+    "full_name": "Roommate (Blank)",
+    "role": "supporting",
+    "tags": "1boy, young, tired eyes, pale skin, short brown hair, empty expression",
+    "personality": "Husk — mark was stolen, barely functional",
+    "clothing": {
+      "default": "plain academy uniform, wrinkled"
+    },
+    "magic": "None (stolen)",
+    "lora": null,
+    "lora_strength": 0
+  }
+}

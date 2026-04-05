@@ -1,0 +1,22 @@
+{
+  "deep-forest": {
+    "tags": "forest, deep woods, ancient trees, dappled sunlight, moss, roots, overgrown, mystical",
+    "description": "Where Tzubaki lived with the Hermit. Wild, overgrown, full of illegal phase-shifted plants."
+  },
+  "the-academy": {
+    "tags": "grand hall, marble floors, pillars, stained glass windows, academy, ornate, golden light, prestigious",
+    "description": "The Golden Script Academy. Imposing, wealthy, built on stolen marks."
+  },
+  "basement-class": {
+    "tags": "basement, dim lighting, concrete walls, sparse furniture, rundown, underground room",
+    "description": "Class F — where the 'failed' students and Husks are kept."
+  },
+  "cage-arena": {
+    "tags": "cage, chain link, concrete floor, arena, underground, spotlights, industrial",
+    "description": "Where Tzubaki proves his worth fighting the captured Harvester."
+  },
+  "school-festival": {
+    "tags": "festival, paper lanterns, outdoor stage, crowds, night market, celebration, banners",
+    "description": "The Academy festival where the Chimera attacks in Episode 3."
+  }
+}
