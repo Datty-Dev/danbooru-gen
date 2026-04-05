@@ -9,7 +9,7 @@
       "combat": "black robe, sleeves rolled, bandaged arms",
       "casual": "simple tunic, loose pants"
     },
-    "magic": "Living Ink — Three Hearts (Iron/Flowing/Ghost)",
+    "magic": "Living Ink \u2014 Three Hearts (Iron/Flowing/Ghost)",
     "lora": "Tzubaki_WAI_Illustrious_3090_V1_000001750.safetensors",
     "lora_strength": 0.9,
     "visual_marks": "Black ink-blot birthmark that moves across skin"
@@ -34,7 +34,7 @@
     "clothing": {
       "default": "formal academy robes, gold trim, high collar"
     },
-    "magic": "Golden Script — unknown type",
+    "magic": "Golden Script \u2014 unknown type",
     "lora": null,
     "lora_strength": 0
   },
@@ -42,12 +42,27 @@
     "full_name": "Roommate (Blank)",
     "role": "supporting",
     "tags": "1boy, young, tired eyes, pale skin, short brown hair, empty expression",
-    "personality": "Husk — mark was stolen, barely functional",
+    "personality": "Husk \u2014 mark was stolen, barely functional",
     "clothing": {
       "default": "plain academy uniform, wrinkled"
     },
     "magic": "None (stolen)",
     "lora": null,
     "lora_strength": 0
+  },
+  "ren": {
+    "full_name": "Ren",
+    "role": "deuteragonist",
+    "tags": "1boy, ren \\(character\\), brown hair, medium hair, green eyes, average build",
+    "personality": "Quiet, defeated at first. Gains confidence through Tzubaki's influence. Methodical \u2014 once he sees a possibility, he masters it fast.",
+    "clothing": {
+      "default": "plain academy uniform, wrinkled, sleeves slightly too long",
+      "combat": "fitted academy uniform, fingerless gloves, thread-wrapped wrists"
+    },
+    "magic": "Golden Script \u2014 Thread mark on fingertips. Creates thin golden threads. Classified Class F 'utility'. Actually versatile: binding, cutting (vibration), nets, shields (woven), tripwires, stitching wounds, rope, swinging.",
+    "lora": null,
+    "lora_strength": 0,
+    "backstory": "Classified as weakest mark in school. Bullied and dismissed. Internalised he was worthless until Tzubaki saw the potential and started using his threads creatively in every plan.",
+    "relationship_to_tzubaki": "Roommate turned best friend. Tzubaki treats his mark as obviously useful \u2014 Ren slowly realises he was taught to think small, not that he was weak."
   }
 }
