@@ -1,0 +1,45 @@
+{
+  "output": "scenes/tzubaki-fishing/video/raw.mp4",
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "model": "wai-illustrious",
+  "lora": "tzubaki",
+  "lora_strength": 0.9,
+  "scenes": [
+    {
+      "name": "peaceful-fishing",
+      "prompt": "masterpiece, best quality, absurdres, solo, 1boy, tzubaki \\(character\\), white hair, short hair, blue eyes, sitting, holding fishing rod, fishing line, ocean, water, horizon, day, blue sky, calm water, serene, light smile, relaxed, casual clothes, white shirt, short sleeves, trousers, barefoot, wooden boat interior, fishing",
+      "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
+      "transition": "cross_dissolve",
+      "duration": 3.0
+    },
+    {
+      "name": "surprised-catch",
+      "prompt": "masterpiece, best quality, absurdres, solo, 1boy, tzubaki \\(character\\), white hair, short hair, blue eyes, surprised, open mouth, wide-eyed, sitting, holding fishing rod, bent fishing rod, ocean, water, day, blue sky, boat, waves, tense, dynamic pose, white shirt, short sleeves, trousers, shouting",
+      "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
+      "transition": "hard_cut",
+      "duration": 1.5,
+      "reference_panel": 0,
+      "denoise": 0.70
+    },
+    {
+      "name": "reeling-in",
+      "prompt": "masterpiece, best quality, absurdres, solo, 1boy, tzubaki \\(character\\), white hair, short hair, blue eyes, gritting teeth, struggling, sweating, sitting, pulling fishing rod, bent fishing rod, ocean, water, splashing, boat, waves, tense, dynamic, white shirt, short sleeves, trousers, effort, strained expression",
+      "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
+      "transition": "hard_cut",
+      "duration": 1.5,
+      "reference_panel": 0,
+      "denoise": 0.70
+    },
+    {
+      "name": "triumphant-catch",
+      "prompt": "masterpiece, best quality, absurdres, solo, 1boy, tzubaki \\(character\\), white hair, short hair, blue eyes, happy, smile, grin, open mouth, holding fish, blue fish, fish above head, victory pose, ocean, water, day, blue sky, boat, white shirt, short sleeves, trousers, triumphant, cheerful",
+      "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 0,
+      "denoise": 0.70
+    }
+  ]
+}
