@@ -6,26 +6,25 @@
   "summary": "Tzubaki is caught eating illegal phase-shifted berries in the forest. Brought to the Academy in chains. Put in a cage with a captured Harvester to prove his worth. Uses Ghost Heart to ignore gravity, un-peels the stolen tattoo with one touch. Headmistress realizes his potential and offers the Scholarship/Debt deal.",
   "mood": "calm → tense → dramatic → mysterious",
   "orientation": "vertical",
-  "total_duration_estimate": 62.5,
+  "total_duration_estimate": 63.5,
   "panels": [
     {
       "id": 0,
       "shot": "Establishing",
       "shot_tags": "scenery, wide_shot, no_humans",
       "location": "deep-forest",
-      "description": "Wide shot of the ancient forest canopy. Massive trees, dappled sunlight filtering through, moss hanging from branches. Mystical, untouched. A faint purple glow comes from somewhere below.",
+      "description": "Wide shot of the ancient forest canopy. Massive trees, dappled sunlight filtering through, moss hanging from branches. Mystical, untouched. A faint purple glow from somewhere below.",
       "dialogue": null,
       "transition": "fade_in",
-      "duration": 2.5,
+      "duration": 3.0,
       "reference_panel": null
     },
     {
       "id": 1,
-      "shot": "Full",
-      "shot_tags": "full_body",
+      "shot": "Establishing",
+      "shot_tags": "scenery, wide_shot, no_humans",
       "location": "deep-forest",
-      "character": "tzubaki",
-      "description": "Tzubaki sitting cross-legged in a sunlit clearing, surrounded by glowing purple berries. Black robe spread out casually, messy black hair catching the light. He's picking berries one by one, completely at peace.",
+      "description": "Another wide angle, lower — looking down a forest path overgrown with roots and glowing mushrooms. The forest feels alive, ancient, full of things that shouldn't exist. No sign of civilization.",
       "dialogue": null,
       "transition": "cross_dissolve",
       "duration": 2.5,
@@ -33,42 +32,90 @@
     },
     {
       "id": 2,
+      "shot": "Full",
+      "shot_tags": "full_body",
+      "location": "deep-forest",
+      "character": "tzubaki",
+      "description": "Tzubaki sitting cross-legged in a sunlit clearing, surrounded by glowing purple berry bushes. Black robe spread out casually on the moss, messy black hair catching dappled light. A small basket of berries beside him. Completely at peace — this is his home.",
+      "dialogue": null,
+      "transition": "cross_dissolve",
+      "duration": 2.5,
+      "reference_panel": null
+    },
+    {
+      "id": 3,
       "shot": "Close-up",
       "shot_tags": "close-up, portrait",
       "location": "deep-forest",
       "character": "tzubaki",
-      "description": "Close-up of Tzubaki's face mid-chew, eyes half-closed in satisfaction. Red eyes, slight smirk. Living his best life.",
-      "dialogue": {
-        "character": "tzubaki",
-        "text": "Phase-shifted berries. Illegal in seven provinces.",
-        "bubble_position": "top-right"
-      },
+      "description": "Close-up of Tzubaki's face. Eyes closed, chewing slowly, savoring. A small content smile. Red eyes half-lidded. For a moment, he's just a kid enjoying a snack in the woods.",
+      "dialogue": null,
       "transition": "hard_cut",
-      "duration": 2.5,
-      "reference_panel": 1
+      "duration": 2.0,
+      "reference_panel": 2
     },
     {
-      "id": 3,
+      "id": 4,
       "shot": "Insert",
       "shot_tags": "still_life",
       "location": "deep-forest",
-      "description": "Insert shot of Tzubaki's hand holding a glowing purple berry. The berry pulses with faint light. Beautiful and clearly magical.",
+      "description": "Insert shot — Tzubaki's hand holding up a glowing purple berry between thumb and finger. It pulses with faint light. Beautiful, clearly magical, clearly illegal.",
       "dialogue": {
         "character": "tzubaki",
-        "text": "...Honestly? Worth it.",
-        "bubble_position": "bottom-left"
+        "text": "Phase-shifted berries.",
+        "bubble_position": "top-right"
       },
       "transition": "hard_cut",
       "duration": 2.0,
       "reference_panel": null
     },
     {
-      "id": 4,
+      "id": 5,
       "shot": "Close-up",
       "shot_tags": "close-up, portrait",
       "location": "deep-forest",
       "character": "tzubaki",
-      "description": "Tzubaki's face — eyes suddenly snap wide open. Alert. The carefree expression vanishes instantly. He heard something.",
+      "description": "Tzubaki pops the berry in his mouth. Eyes closed, genuine enjoyment. Then opens one eye toward camera — breaking the fourth wall slightly — with a mischievous look.",
+      "dialogue": {
+        "character": "tzubaki",
+        "text": "Illegal in seven provinces. ...Honestly? Worth it.",
+        "bubble_position": "top-right"
+      },
+      "transition": "hard_cut",
+      "duration": 2.5,
+      "reference_panel": 3
+    },
+    {
+      "id": 6,
+      "shot": "Medium",
+      "shot_tags": "cowboy_shot, upper_body",
+      "location": "deep-forest",
+      "character": "tzubaki",
+      "description": "Tzubaki leaning back on one hand, looking up at the canopy. Relaxed, casual. His other hand rests on his knee — the black ink-blot birthmark visible on his wrist, shifting slightly on its own. Alive.",
+      "dialogue": null,
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 2
+    },
+    {
+      "id": 7,
+      "shot": "Close-up",
+      "shot_tags": "still_life",
+      "location": "deep-forest",
+      "character": "tzubaki",
+      "description": "Close-up of Tzubaki's wrist. The black ink-blot birthmark — not a tattoo, something organic. It moves on its own, shifting shape slightly like a living thing. His mark is alive.",
+      "dialogue": null,
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": null
+    },
+    {
+      "id": 8,
+      "shot": "Close-up",
+      "shot_tags": "close-up, portrait",
+      "location": "deep-forest",
+      "character": "tzubaki",
+      "description": "Tzubaki mid-chew — freezes. Eyes snap wide. Alert. The relaxed expression evaporates in a heartbeat. He heard something. His ink mark on his wrist flinches too.",
       "dialogue": {
         "character": "tzubaki",
         "text": "...That's a lot of footsteps.",
@@ -76,153 +123,97 @@
       },
       "transition": "hard_cut",
       "duration": 2.0,
-      "reference_panel": 2
+      "reference_panel": 5
     },
     {
-      "id": 5,
+      "id": 9,
       "shot": "Low angle",
       "shot_tags": "from_below, full_body",
       "location": "deep-forest",
       "character": "tzubaki",
-      "description": "Low angle shot — Tzubaki looking up as armored Academy guards emerge from the treeline, surrounding him. He's still sitting, berry in hand, looking up at them like annoyed customers showed up at his picnic.",
+      "description": "Low angle — Tzubaki still sitting on the ground, looking up. Armored Academy guards emerge from the treeline, surrounding him. Swords drawn, golden script marks glowing on their arms. He's still holding a berry. Looks up at them like annoyed customers interrupting lunch.",
       "dialogue": null,
-      "transition": "whip_pan_left",
+      "transition": "hard_cut",
       "duration": 2.0,
-      "reference_panel": 1
+      "reference_panel": 2
     },
     {
-      "id": 6,
+      "id": 10,
+      "shot": "Close-up",
+      "shot_tags": "close-up, portrait",
+      "location": "deep-forest",
+      "character": "tzubaki",
+      "description": "Tzubaki looking up at the guards. Not scared. More annoyed than anything. He glances at the berry in his hand, then back at the guards — genuinely weighing whether to finish eating first.",
+      "dialogue": {
+        "character": "tzubaki",
+        "text": "Can I at least finish this one? It's a really good batch.",
+        "bubble_position": "top-right"
+      },
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 8
+    },
+    {
+      "id": 11,
+      "shot": "Full",
+      "shot_tags": "full_body",
+      "location": "deep-forest",
+      "character": "tzubaki",
+      "description": "A guard grabs Tzubaki by the collar and hauls him up. Another slaps shackles on his wrists. Tzubaki doesn't resist — he's looking at the shackles with mild interest, like they're an inconvenience, not a threat.",
+      "dialogue": null,
+      "transition": "whip_pan_right",
+      "duration": 2.0,
+      "reference_panel": 2
+    },
+    {
+      "id": 12,
       "shot": "Establishing",
       "shot_tags": "scenery, wide_shot, no_humans",
       "location": "the-academy",
-      "description": "Wide shot of the Golden Script Academy exterior. Grand, imposing building with golden spires and stained glass windows. Prestigious, wealthy — built on secrets.",
+      "description": "Wide shot of the Golden Script Academy exterior. Grand, imposing building with golden spires and stained glass. The forest is far behind — this is a different world.",
       "dialogue": null,
       "transition": "cross_dissolve",
       "duration": 2.5,
       "reference_panel": null
     },
     {
-      "id": 7,
-      "shot": "Full",
-      "shot_tags": "full_body",
-      "location": "the-academy",
-      "character": "tzubaki",
-      "description": "Tzubaki being dragged through the grand hall in chains and shackles. Marble floors, towering pillars, golden light. Two guards gripping his arms. He's looking around like he's touring a hotel.",
-      "dialogue": {
-        "character": "tzubaki",
-        "text": "Nice floors. Do you guys polish these daily, or is this a special occasion?",
-        "bubble_position": "top-right"
-      },
-      "transition": "hard_cut",
-      "duration": 2.5,
-      "reference_panel": null
-    },
-    {
-      "id": 8,
-      "shot": "Back view",
-      "shot_tags": "from_behind, upper_body",
-      "location": "the-academy",
-      "character": "tzubaki",
-      "description": "Back view of Tzubaki being led down a dark staircase. The grand golden light fading behind him, replaced by dim industrial lighting below. Descending into something less pleasant.",
-      "dialogue": null,
-      "transition": "hard_cut",
-      "duration": 2.0,
-      "reference_panel": 7
-    },
-    {
-      "id": 9,
-      "shot": "Establishing",
-      "shot_tags": "scenery, wide_shot, no_humans",
-      "location": "cage-arena",
-      "description": "The underground cage arena. Chain-link walls, concrete floor, harsh overhead spotlights. Industrial, brutal. Scratches and scorch marks on the walls from previous fights.",
-      "dialogue": null,
-      "transition": "hard_cut",
-      "duration": 2.5,
-      "reference_panel": null
-    },
-    {
-      "id": 10,
-      "shot": "Full",
-      "shot_tags": "full_body",
-      "location": "cage-arena",
-      "character": "tzubaki",
-      "description": "Tzubaki shoved into the cage. Chains removed, gate slammed shut behind him. He stumbles slightly, then straightens up, rolling his shoulders. Looking around the arena with mild curiosity.",
-      "dialogue": null,
-      "transition": "hard_cut",
-      "duration": 2.0,
-      "reference_panel": 7
-    },
-    {
-      "id": 11,
-      "shot": "Over-the-shoulder",
-      "shot_tags": "over_shoulder, upper_body",
-      "location": "cage-arena",
-      "character": "tzubaki",
-      "description": "Over Tzubaki's shoulder — the opposite gate opens. A massive Harvester steps out. Crude armor, scarred skin, and a glowing stolen Golden Script pulsing on his forearm. He's grinning, cracking his knuckles.",
-      "dialogue": null,
-      "transition": "hard_cut",
-      "duration": 2.0,
-      "reference_panel": 10
-    },
-    {
-      "id": 12,
-      "shot": "Close-up",
-      "shot_tags": "close-up, portrait",
-      "location": "cage-arena",
-      "character": "tzubaki",
-      "description": "Close-up of Tzubaki's face. Not scared — scanning. His red eyes are tracing the Golden Script on the Harvester's arm. The faintest hint of a smirk forming. He's reading it like code.",
-      "dialogue": {
-        "character": "tzubaki",
-        "text": "Stolen script. The fracture on the third ring? Dead giveaway.",
-        "bubble_position": "top-right"
-      },
-      "transition": "hard_cut",
-      "duration": 2.5,
-      "reference_panel": 10
-    },
-    {
       "id": 13,
-      "shot": "Close-up",
-      "shot_tags": "close-up, portrait",
-      "location": "cage-arena",
+      "shot": "Full",
+      "shot_tags": "full_body",
+      "location": "the-academy",
       "character": "tzubaki",
-      "description": "Tzubaki's eyes narrow slightly, still analyzing. The smirk grows.",
+      "description": "Tzubaki dragged through the grand hall in chains. Marble floors, towering pillars, golden light. Two guards gripping his arms. He's looking around at the architecture like he's touring a hotel he can't afford.",
       "dialogue": {
         "character": "tzubaki",
-        "text": "Also... your left side is completely open.",
+        "text": "Nice floors.",
         "bubble_position": "top-right"
       },
       "transition": "hard_cut",
       "duration": 2.0,
-      "reference_panel": 12
+      "reference_panel": null
     },
     {
       "id": 14,
-      "shot": "Action",
-      "shot_tags": "motion_blur, speed_lines, full_body",
-      "location": "cage-arena",
-      "description": "The Harvester charges — massive fist glowing with stolen magic, aiming to crush. Motion blur, speed lines, raw power.",
+      "shot": "Back view",
+      "shot_tags": "from_behind, full_body",
+      "location": "the-academy",
+      "character": "tzubaki",
+      "description": "Back view of Tzubaki being led down a dark stone staircase. Golden light fading above, replaced by dim industrial lighting below. Descending into something less pleasant.",
       "dialogue": null,
       "transition": "hard_cut",
-      "duration": 1.5,
-      "reference_panel": null
+      "duration": 2.0,
+      "reference_panel": 13
     },
     {
       "id": 15,
-      "shot": "Action",
-      "shot_tags": "motion_blur, speed_lines, upper_body",
+      "shot": "Establishing",
+      "shot_tags": "scenery, wide_shot, no_humans",
       "location": "cage-arena",
-      "character": "tzubaki",
-      "magic": "ghost_heart",
-      "description": "The Harvester slams down a gravity field — the air distorts, concrete cracks. But Tzubaki's ink mark shifts to Ghost Heart. His body becomes translucent grey smoke. The gravity passes RIGHT THROUGH him. He stands unfazed.",
-      "dialogue": {
-        "character": "tzubaki",
-        "text": "Gravity field. Cute.",
-        "bubble_position": "top-left"
-      },
+      "description": "The underground cage arena. Chain-link walls, concrete floor, harsh overhead spotlights. Scratches and scorch marks everywhere. This place has seen violence.",
+      "dialogue": null,
       "transition": "hard_cut",
-      "duration": 2.5,
-      "reference_panel": 10
+      "duration": 2.0,
+      "reference_panel": null
     },
     {
       "id": 16,
@@ -230,79 +221,79 @@
       "shot_tags": "full_body",
       "location": "cage-arena",
       "character": "tzubaki",
-      "magic": "ghost_heart",
-      "description": "Tzubaki walking calmly toward the Harvester through the dissipating gravity field. Ghost Heart smoke trailing off his body. The Harvester's expression shifts from confident to confused to afraid.",
-      "dialogue": {
-        "character": "tzubaki",
-        "text": "Gonna cost you extra though.",
-        "bubble_position": "top-right"
-      },
+      "description": "Tzubaki shoved into the cage. Shackles removed, gate slammed shut. He stumbles, rolls his shoulders, looks around. Mild curiosity — like he's checking out a bad apartment.",
+      "dialogue": null,
       "transition": "hard_cut",
       "duration": 2.0,
-      "reference_panel": 15
+      "reference_panel": 13
     },
     {
       "id": 17,
-      "shot": "Close-up",
-      "shot_tags": "close-up, still_life, lips",
+      "shot": "Over-the-shoulder",
+      "shot_tags": "over_shoulder, upper_body",
       "location": "cage-arena",
       "character": "tzubaki",
-      "magic": "flowing_heart",
-      "description": "Extreme close-up — Tzubaki's hand pressing against the Harvester's stolen tattoo. The ink on his palm shifts to Flowing Heart, rippling liquid. The Golden Script begins to dissolve, peeling off skin like wet paint, swirling into a small vortex.",
-      "dialogue": null,
-      "transition": "hard_cut",
-      "duration": 2.5,
-      "reference_panel": 15
-    },
-    {
-      "id": 18,
-      "shot": "Full",
-      "shot_tags": "full_body",
-      "location": "cage-arena",
-      "character": "tzubaki",
-      "description": "Tzubaki standing over the defeated Harvester, holding a small glass jar. A dissolved Golden Script swirls inside like golden liquid. He's dusting off his robe with his free hand. Guards visible through the cage, frozen in shock.",
-      "dialogue": {
-        "character": "tzubaki",
-        "text": "One un-peeled tattoo. Could've done it faster, but the dramatic pause felt right.",
-        "bubble_position": "top-right"
-      },
-      "transition": "whip_pan_up",
-      "duration": 2.5,
-      "reference_panel": 10
-    },
-    {
-      "id": 19,
-      "shot": "Dutch angle",
-      "shot_tags": "dutch_angle, upper_body",
-      "location": "cage-arena",
-      "description": "Dutch angle looking up at the observation deck above the cage. A figure in gold-trimmed robes steps forward into the spotlight. We can't see her face clearly yet — just the silhouette. Powerful, calculating presence.",
+      "description": "Over Tzubaki's shoulder — the opposite gate opens. A massive Harvester steps out. Crude armor, scarred skin, glowing stolen Golden Script pulsing on his forearm. Grinning, cracking knuckles.",
       "dialogue": null,
       "transition": "hard_cut",
       "duration": 2.0,
+      "reference_panel": 16
+    },
+    {
+      "id": 18,
+      "shot": "Close-up",
+      "shot_tags": "close-up, portrait",
+      "location": "cage-arena",
+      "character": "tzubaki",
+      "description": "Tzubaki's face. Not scared — scanning. Red eyes tracing the Golden Script on the Harvester's arm like he's reading sheet music. The faintest smirk.",
+      "dialogue": {
+        "character": "tzubaki",
+        "text": "Stolen script. The fracture on the third ring? Dead giveaway.",
+        "bubble_position": "top-right"
+      },
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 16
+    },
+    {
+      "id": 19,
+      "shot": "Action",
+      "shot_tags": "motion_blur, speed_lines, full_body",
+      "location": "cage-arena",
+      "description": "The Harvester charges — massive fist glowing with stolen magic. Ground cracks under his feet. Speed lines, raw power, pure aggression.",
+      "dialogue": null,
+      "transition": "hard_cut",
+      "duration": 1.5,
       "reference_panel": null
     },
     {
       "id": 20,
-      "shot": "Medium",
-      "shot_tags": "upper_body, cowboy_shot",
+      "shot": "Action",
+      "shot_tags": "motion_blur, speed_lines, upper_body",
       "location": "cage-arena",
-      "character": "headmistress",
-      "description": "The Headmistress steps into full view. Silver hair in a tight bun, glasses catching the spotlight, gold-trimmed robes with high collar. Sharp, intelligent eyes studying Tzubaki like a specimen.",
-      "dialogue": null,
+      "character": "tzubaki",
+      "magic": "ghost_heart",
+      "description": "The Harvester slams a gravity field down — air distorts, concrete shatters. But Tzubaki's ink shifts to Ghost Heart. His body becomes translucent grey smoke. The attack passes RIGHT THROUGH him. He doesn't even flinch.",
+      "dialogue": {
+        "character": "tzubaki",
+        "text": "Gravity field. Cute.",
+        "bubble_position": "top-left"
+      },
       "transition": "hard_cut",
-      "duration": 2.0,
-      "reference_panel": null
+      "duration": 2.5,
+      "reference_panel": 16
     },
     {
       "id": 21,
-      "shot": "Profile",
-      "shot_tags": "profile, upper_body",
+      "shot": "Full",
+      "shot_tags": "full_body",
       "location": "cage-arena",
-      "character": "headmistress",
-      "description": "Profile shot of the Headmistress. A thin, calculating smile. She speaks down to the cage without looking at the guards — they don't matter. Only Tzubaki matters.",
+      "character": "tzubaki",
+      "magic": "flowing_heart",
+      "description": "Tzubaki walks through the dissipating gravity field toward the stunned Harvester. His hand reaches out — the ink shifts to Flowing Heart, rippling liquid. He places one palm flat on the Harvester's stolen script. The Golden Script dissolves, peeling off like wet paint, swirling into a jar materializing in his other hand.",
       "dialogue": {
-        "character": "headmistress",
-        "text": "Living Ink. Unregistered. Unbound.",
+        "character": "tzubaki",
+        "text": "Also, your left side was wide open.",
         "bubble_position": "top-right"
       },
       "transition": "hard_cut",
@@ -311,51 +302,45 @@
     },
     {
       "id": 22,
-      "shot": "Close-up",
-      "shot_tags": "close-up, portrait",
+      "shot": "Full",
+      "shot_tags": "full_body",
       "location": "cage-arena",
-      "character": "headmistress",
-      "description": "Close-up of the Headmistress's eyes behind her glasses. Pure calculation. She's not impressed — she's measuring. Her eyes flick to the collection jar in Tzubaki's hand.",
+      "character": "tzubaki",
+      "description": "Tzubaki standing over the collapsed Harvester, holding the collection jar with a dissolved Golden Script swirling inside like golden liquid. He dusts off his robe. Guards visible through the cage, frozen.",
       "dialogue": {
-        "character": "headmistress",
-        "text": "...And you just proved you can extract what our best surgeons cannot.",
+        "character": "tzubaki",
+        "text": "One un-peeled tattoo. Dramatic pause included, no extra charge.",
         "bubble_position": "top-right"
       },
-      "transition": "hard_cut",
+      "transition": "whip_pan_up",
       "duration": 2.5,
-      "reference_panel": 20
+      "reference_panel": 16
     },
     {
       "id": 23,
-      "shot": "Reaction",
-      "shot_tags": "close-up, portrait",
+      "shot": "Dutch angle",
+      "shot_tags": "dutch_angle, upper_body",
       "location": "cage-arena",
-      "character": "tzubaki",
-      "description": "Close-up of Tzubaki's face. The carefree mask slips — just for a second. Red eyes narrow. He sees the gears turning behind her glasses. He knows what's coming.",
-      "dialogue": {
-        "character": "tzubaki",
-        "text": "...This is the part where you name a price, isn't it.",
-        "bubble_position": "top-left"
-      },
+      "description": "Dutch angle looking up at the observation deck. A silhouette in gold-trimmed robes steps into the spotlight. Can't see the face yet — just the imposing figure. Someone important has been watching.",
+      "dialogue": null,
       "transition": "hard_cut",
       "duration": 2.0,
-      "reference_panel": 18
+      "reference_panel": null
     },
     {
       "id": 24,
-      "shot": "Composite",
+      "shot": "Medium",
       "shot_tags": "upper_body, cowboy_shot",
-      "location": "the-academy",
+      "location": "cage-arena",
       "character": "headmistress",
-      "character_2": "tzubaki",
-      "description": "Split composition — Headmistress above in the observation deck, Tzubaki below in the cage. She extends a sealed scroll downward (the contract). He looks up at it like a bill he didn't order.",
+      "description": "The Headmistress steps into full view. Silver hair in a tight bun, glasses, gold-trimmed robes with high collar. Sharp, intelligent eyes studying Tzubaki like a specimen. The calculating smile of someone who just found exactly what they were looking for.",
       "dialogue": {
         "character": "headmistress",
-        "text": "Full scholarship. Room, board, training.",
+        "text": "Living Ink. Unregistered. Unbound.",
         "bubble_position": "top-right"
       },
       "transition": "hard_cut",
-      "duration": 2.5,
+      "duration": 2.0,
       "reference_panel": null
     },
     {
@@ -364,43 +349,47 @@
       "shot_tags": "close-up, portrait",
       "location": "cage-arena",
       "character": "headmistress",
-      "description": "Close-up of the Headmistress's face. The smile sharpens. She's closing the trap.",
+      "description": "Close-up of the Headmistress's eyes behind her glasses. Pure calculation. She glances at the collection jar, then back to Tzubaki.",
       "dialogue": {
         "character": "headmistress",
-        "text": "In exchange... you hunt every Harvester we can't catch.",
+        "text": "You just did what our best surgeons cannot.",
+        "bubble_position": "top-right"
+      },
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 24
+    },
+    {
+      "id": 26,
+      "shot": "Reaction",
+      "shot_tags": "close-up, portrait",
+      "location": "cage-arena",
+      "character": "tzubaki",
+      "description": "Tzubaki's face. The carefree mask slips — red eyes narrow. He sees the gears turning. He knows what's coming.",
+      "dialogue": {
+        "character": "tzubaki",
+        "text": "...This is the part where you name a price.",
+        "bubble_position": "top-left"
+      },
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 22
+    },
+    {
+      "id": 27,
+      "shot": "Profile",
+      "shot_tags": "profile, upper_body",
+      "location": "cage-arena",
+      "character": "headmistress",
+      "description": "Profile of the Headmistress. The smile sharpens. She extends a sealed scroll downward — the contract.",
+      "dialogue": {
+        "character": "headmistress",
+        "text": "Full scholarship. Room, board, training. In exchange — you hunt every Harvester we can't.",
         "bubble_position": "top-right"
       },
       "transition": "hard_cut",
       "duration": 2.5,
-      "reference_panel": 20
-    },
-    {
-      "id": 26,
-      "shot": "POV",
-      "shot_tags": "pov, upper_body",
-      "location": "cage-arena",
-      "character": "tzubaki",
-      "description": "Tzubaki's POV — looking down at the scroll in his hands. The contract text is dense, official, full of clauses. His thumb brushes the edge. A beat of silence.",
-      "dialogue": null,
-      "transition": "hard_cut",
-      "duration": 2.0,
-      "reference_panel": 18
-    },
-    {
-      "id": 27,
-      "shot": "Close-up",
-      "shot_tags": "close-up, portrait",
-      "location": "cage-arena",
-      "character": "tzubaki",
-      "description": "Tzubaki's face. A slow grin spreading. Not happy. Not excited. The grin of someone who just ran the numbers and found them... acceptable. Red eyes gleaming with that chaotic energy returning.",
-      "dialogue": {
-        "character": "tzubaki",
-        "text": "So I eat for free, and I get to punch people who deserve it.",
-        "bubble_position": "top-left"
-      },
-      "transition": "hard_cut",
-      "duration": 2.5,
-      "reference_panel": 23
+      "reference_panel": 24
     },
     {
       "id": 28,
@@ -408,18 +397,30 @@
       "shot_tags": "close-up, portrait",
       "location": "cage-arena",
       "character": "tzubaki",
-      "description": "Final shot. Tzubaki holding the signed scroll up, still grinning. His ink mark pulses once on his wrist — alive, shifting. The camera holds on that mark. It's not a birthmark. It's something much older.",
+      "description": "Tzubaki's face. A slow grin spreading. Not happy — calculating. The grin of someone who just ran the numbers. Red eyes gleaming. The chaotic energy returns.",
       "dialogue": {
         "character": "tzubaki",
-        "text": "...Where do I sign?",
-        "bubble_position": "bottom-right"
+        "text": "So I eat for free, and punch people who deserve it. ...Where do I sign?",
+        "bubble_position": "top-right"
       },
+      "transition": "hard_cut",
+      "duration": 2.5,
+      "reference_panel": 26
+    },
+    {
+      "id": 29,
+      "shot": "Insert",
+      "shot_tags": "still_life",
+      "location": "cage-arena",
+      "character": "tzubaki",
+      "description": "Final shot. Close-up of Tzubaki's hand holding the signed scroll — and the ink mark on his wrist pulses, shifting shape. It's not a birthmark. It's something much older. The camera holds on that mark.",
+      "dialogue": null,
       "transition": "fade_out",
       "duration": 3.0,
-      "reference_panel": 27
+      "reference_panel": null
     }
   ],
   "characters_used": ["tzubaki", "headmistress"],
   "locations_used": ["deep-forest", "the-academy", "cage-arena"],
-  "notes": "29 panels at ~2.15s average = ~62.5 seconds. Expanded with more reaction beats, insert shots, POV moments, and a dutch angle for the Headmistress reveal. Magic showcased: Ghost Heart (phase through gravity), Flowing Heart (dissolve stolen tattoos). The Headmistress reveal is drawn out for tension. Final beat lingers on the Living Ink mark — foreshadowing."
+  "notes": "30 panels at ~2.12s average = ~63.5s. Forest section expanded to panels 0-11 (~24s) — establishes Tzubaki's personality (carefree, quirky, food-obsessed), his home (the mystical forest), and his Living Ink mark before anything happens. Academy section compressed to 3 panels (12-14). Cage fight gets 8 panels (15-22). The Deal gets 7 panels (23-29). Final beat lingers on the Living Ink mark — foreshadowing."
 }
