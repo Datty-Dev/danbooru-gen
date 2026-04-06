@@ -1,0 +1,29 @@
+{
+  "title": "Forest Scene — Regenerating panels 6 and 8",
+  "scenes": [
+    {
+      "id": 6,
+      "shot": "Low angle",
+      "shot_tags": "from_below, full_body",
+      "description": "Low angle — Tzubaki sitting, looking up at ONE knight guard. Tall knight in silver armor, plumed helmet, academy crest on chestplate, sword at hip. Golden script faintly glowing on gauntlet.",
+      "prompt": "masterpiece, best quality, 1boy, tzubaki \\(character\\), from_below, full_body, sitting on ground, looking up, one knight guard standing over, tall knight, silver plate armor, plumed helmet, academy crest on chestplate, sword at hip, golden script glow on gauntlet, holding berry, unbothered expression, black hair, red eyes, chinese clothes, black robe, forest clearing, natural green, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
+      "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, multiple guards, extra people, clone, same face, nsfw",
+      "transition": "hard_cut",
+      "duration": 2.0,
+      "reference_panel": 1,
+      "denoise": 0.65
+    },
+    {
+      "id": 8,
+      "shot": "Full",
+      "shot_tags": "full_body",
+      "description": "Knight guard gripping Tzubaki by the collar, hauling him up. Shackles on Tzubaki's wrists. One knight, silver armor, imposing. Tzubaki unbothered.",
+      "prompt": "masterpiece, best quality, 1boy, tzubaki \\(character\\), full_body, being grabbed by collar, one knight, tall knight in silver plate armor, plumed helmet removed tucked under arm, stern face, short brown hair, strong jaw, shackles on tzubaki wrists, standing, not resisting, looking at shackles, curious, unbothered, black hair, red eyes, chinese clothes, black robe, forest clearing, natural light, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
+      "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, multiple guards, extra people, clone, same face, duplicate, nsfw",
+      "transition": "whip_pan_right",
+      "duration": 2.0,
+      "reference_panel": 6,
+      "denoise": 0.65
+    }
+  ]
+}

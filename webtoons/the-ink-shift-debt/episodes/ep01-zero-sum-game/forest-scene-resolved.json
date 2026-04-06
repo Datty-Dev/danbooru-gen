@@ -1,10 +1,5 @@
 {
-  "title": "Forest Scene — The Capture",
-  "episode": 1,
-  "act": 1,
-  "location": "deep-forest",
-  "orientation": "vertical",
-  "mood": "calm → playful → action",
+  "title": "Forest Scene \u2014 The Capture",
   "scenes": [
     {
       "id": 0,
@@ -16,7 +11,8 @@
       "transition": "fade_in",
       "duration": 3.0,
       "reference_panel": null,
-      "denoise": 1.0
+      "denoise": 1.0,
+      "image": "/home/node/.openclaw/workspace/danbooru/video/.cache/generated/ab2cf19d3ce2.png"
     },
     {
       "id": 1,
@@ -28,7 +24,8 @@
       "transition": "cross_dissolve",
       "duration": 2.5,
       "reference_panel": null,
-      "denoise": 1.0
+      "denoise": 1.0,
+      "image": "/home/node/.openclaw/workspace/danbooru/video/.cache/generated/cbc6d62f0876.png"
     },
     {
       "id": 2,
@@ -40,7 +37,8 @@
       "transition": "hard_cut",
       "duration": 2.0,
       "reference_panel": 1,
-      "denoise": 0.65
+      "denoise": 0.65,
+      "image": "/home/node/.openclaw/workspace/danbooru/video/.cache/generated/c6760b946d80.png"
     },
     {
       "id": 3,
@@ -52,7 +50,8 @@
       "transition": "hard_cut",
       "duration": 2.0,
       "reference_panel": null,
-      "denoise": 1.0
+      "denoise": 1.0,
+      "image": "/home/node/.openclaw/workspace/danbooru/video/.cache/generated/068dc7a93477.png"
     },
     {
       "id": 4,
@@ -69,10 +68,14 @@
         {
           "type": "speech_bubble",
           "text": "Illegal in seven provinces. ...Honestly? Worth it.",
-          "position": [0.7, 0.15],
+          "position": [
+            0.7,
+            0.15
+          ],
           "tail_direction": "bottom-left"
         }
-      ]
+      ],
+      "image": "/home/node/.openclaw/workspace/danbooru/video/.cache/generated/3298f5448e3f.png"
     },
     {
       "id": 5,
@@ -84,27 +87,32 @@
       "transition": "hard_cut",
       "duration": 2.0,
       "reference_panel": 4,
-      "denoise": 0.60,
+      "denoise": 0.6,
       "overlays": [
         {
           "type": "speech_bubble",
           "text": "...That's a lot of footsteps.",
-          "position": [0.3, 0.12],
+          "position": [
+            0.3,
+            0.12
+          ],
           "tail_direction": "bottom-right"
         }
-      ]
+      ],
+      "image": "/home/node/.openclaw/workspace/danbooru/video/.cache/generated/fba2ca6de876.png"
     },
     {
       "id": 6,
       "shot": "Low angle",
       "shot_tags": "from_below, full_body",
-      "description": "Low angle — Tzubaki sitting, looking up. Armored guards emerging from treeline.",
+      "description": "Low angle \u2014 Tzubaki sitting, looking up. Armored guards emerging from treeline.",
       "prompt": "masterpiece, best quality, 1boy, tzubaki \\(character\\), from_below, full_body, sitting on ground, looking up, surrounded, armored guards in background, forest edge, swords drawn, golden script glow, holding berry, unbothered, black hair, red eyes, chinese clothes, black robe, Tzubaki_WAI_Illustrious_3090_V1_000001750 safetensors",
       "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing fingers, extra fingers, blurry, watermark, signature, text, nsfw",
       "transition": "hard_cut",
       "duration": 2.0,
       "reference_panel": 1,
-      "denoise": 0.65
+      "denoise": 0.65,
+      "image": "/home/node/.openclaw/workspace/danbooru/video/.cache/generated/5b9dd6f4c4fb.png"
     },
     {
       "id": 7,
@@ -116,15 +124,19 @@
       "transition": "hard_cut",
       "duration": 2.0,
       "reference_panel": 5,
-      "denoise": 0.60,
+      "denoise": 0.6,
       "overlays": [
         {
           "type": "speech_bubble",
           "text": "Can I at least finish this one? It's a really good batch.",
-          "position": [0.7, 0.12],
+          "position": [
+            0.7,
+            0.12
+          ],
           "tail_direction": "bottom-left"
         }
-      ]
+      ],
+      "image": "/home/node/.openclaw/workspace/danbooru/video/.cache/generated/659aec91e9f4.png"
     },
     {
       "id": 8,
@@ -136,7 +148,8 @@
       "transition": "whip_pan_right",
       "duration": 2.0,
       "reference_panel": 6,
-      "denoise": 0.65
+      "denoise": 0.65,
+      "image": "/home/node/.openclaw/workspace/danbooru/video/.cache/generated/34340c947a1c.png"
     }
   ]
 }

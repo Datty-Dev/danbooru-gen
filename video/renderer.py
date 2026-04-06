@@ -126,7 +126,7 @@ def generate_frames(config, output_dir):
             frame = render_title_card(width, height, tc_text, 
                                      font_size=title_card.get("font_size", 72),
                                      animation=tc_animation, progress=progress)
-            frame.save(os.path.join(frames_dir, f"frame_{frame_num:05d}.png"))
+            frame.save(os.path.join(frames_dir, f"frame_{frame_num:05d}.jpg"), "JPEG", quality=95)
             frame_num += 1
     
     # Generate scene frames
@@ -150,7 +150,7 @@ def generate_frames(config, output_dir):
                                       trans_frames, trans_params)
             
             for frame in frames:
-                frame.save(os.path.join(frames_dir, f"frame_{frame_num:05d}.png"))
+                frame.save(os.path.join(frames_dir, f"frame_{frame_num:05d}.jpg"), "JPEG", quality=95)
                 frame_num += 1
         
         # Hold frames (with text overlays)
@@ -164,7 +164,7 @@ def generate_frames(config, output_dir):
             for overlay in text_overlays:
                 frame = render_text_overlay(frame, overlay, progress=progress)
             
-            frame.save(os.path.join(frames_dir, f"frame_{frame_num:05d}.png"))
+            frame.save(os.path.join(frames_dir, f"frame_{frame_num:05d}.jpg"), "JPEG", quality=95)
             frame_num += 1
         
         print(f"  Scene {i+1}/{len(scenes)}: {hold_frames} hold + transition frames")
@@ -180,7 +180,7 @@ def encode_video(frames_dir, output_path, fps=30, width=1080, height=1920, crf=1
     cmd = [
         ffmpeg, "-y",
         "-framerate", str(fps),
-        "-i", os.path.join(frames_dir, "frame_%05d.png"),
+        "-i", os.path.join(frames_dir, "frame_%05d.jpg"),
         "-c:v", "libx264",
         "-pix_fmt", "yuv420p",
         "-crf", str(crf),

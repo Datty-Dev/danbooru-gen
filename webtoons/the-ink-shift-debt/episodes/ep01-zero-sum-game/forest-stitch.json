@@ -1,0 +1,84 @@
+{
+  "title": "Forest Scene \u2014 The Capture",
+  "orientation": "vertical",
+  "scenes": [
+    {
+      "image": "/home/node/.openclaw/workspace/danbooru/webtoons/the-ink-shift-debt/episodes/ep01-zero-sum-game/images/panel_01.png",
+      "duration": 3.0,
+      "transition_in": "fade_in"
+    },
+    {
+      "image": "/home/node/.openclaw/workspace/danbooru/webtoons/the-ink-shift-debt/episodes/ep01-zero-sum-game/images/panel_02.png",
+      "duration": 2.5,
+      "transition_in": "cross_dissolve"
+    },
+    {
+      "image": "/home/node/.openclaw/workspace/danbooru/webtoons/the-ink-shift-debt/episodes/ep01-zero-sum-game/images/panel_03.png",
+      "duration": 2.0,
+      "transition_in": "cross_dissolve"
+    },
+    {
+      "image": "/home/node/.openclaw/workspace/danbooru/webtoons/the-ink-shift-debt/episodes/ep01-zero-sum-game/images/panel_04.png",
+      "duration": 2.0,
+      "transition_in": "hard_cut"
+    },
+    {
+      "image": "/home/node/.openclaw/workspace/danbooru/webtoons/the-ink-shift-debt/episodes/ep01-zero-sum-game/images/panel_05.png",
+      "duration": 2.5,
+      "transition_in": "hard_cut",
+      "text_overlays": [
+        {
+          "type": "speech_bubble",
+          "text": "Illegal in seven provinces. ...Honestly? Worth it.",
+          "position": "top-right",
+          "tail_direction": "bottom-left"
+        }
+      ]
+    },
+    {
+      "image": "/home/node/.openclaw/workspace/danbooru/webtoons/the-ink-shift-debt/episodes/ep01-zero-sum-game/images/panel_06.png",
+      "duration": 2.0,
+      "transition_in": "hard_cut",
+      "text_overlays": [
+        {
+          "type": "speech_bubble",
+          "text": "...That's a lot of footsteps.",
+          "position": "top-left",
+          "tail_direction": "bottom-right"
+        }
+      ]
+    },
+    {
+      "image": "/home/node/.openclaw/workspace/danbooru/webtoons/the-ink-shift-debt/episodes/ep01-zero-sum-game/images/panel_07.png",
+      "duration": 2.0,
+      "transition_in": "cross_dissolve",
+      "text_overlays": [
+        {
+          "type": "speech_bubble",
+          "text": "Tzubaki. You are under arrest.",
+          "x": 100,
+          "y": 100,
+          "font_size": 40
+        }
+      ]
+    },
+    {
+      "image": "/home/node/.openclaw/workspace/danbooru/webtoons/the-ink-shift-debt/episodes/ep01-zero-sum-game/images/panel_08.png",
+      "duration": 2.0,
+      "transition_in": "hard_cut",
+      "text_overlays": [
+        {
+          "type": "speech_bubble",
+          "text": "Can I at least finish this one? It's a really good batch.",
+          "position": "top-right",
+          "tail_direction": "bottom-left"
+        }
+      ]
+    },
+    {
+      "image": "/home/node/.openclaw/workspace/danbooru/webtoons/the-ink-shift-debt/episodes/ep01-zero-sum-game/images/panel_09.png",
+      "duration": 2.0,
+      "transition_in": "whip_pan"
+    }
+  ]
+}
