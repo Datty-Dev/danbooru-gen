@@ -36,6 +36,11 @@
           "You know what your problem is? You guys memorize your scripts. I read them."
         ]
       }
+    },
+    "voice": {
+      "base": "male_01.wav",
+      "rvc": "gojoEng\\GoJoV1_411e_19728s.pth",
+      "rvc_pitch": 0
     }
   },
   "the_hermit": {
